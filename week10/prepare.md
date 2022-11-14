@@ -211,7 +211,7 @@ What is MMap?
 
 >  It is a method of memory-mapped file I/O. It implements demand paging because file contents are not read from disk directly and initially do not use physical RAM at all. The actual reads from disk are performed in a "lazy" manner, after a specific location is accessed. 
 
-Memory mapping is used for speed.  The operating system will "map" a file to a memory.  You can then access the contents of the file just by access that memory.  If your program makes a change in the memory, the OS will ensure that the change is written back to the file when the file is unmapped.
+Memory mapping is used for speed.  The operating system will "map" a file to a memory.  You can then access the contents of the file just by accessing that memory.  If your program makes a change in the memory, the OS will ensure that the change is written back to the file when the file is unmapped.
 
 Memory mapping can also be used to share memory between processes on the same computer.
 
